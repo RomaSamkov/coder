@@ -14,3 +14,9 @@ class Kata {
 }
 
 console.log(Kata.getVolumeOfCuboid(6, 2, 5));
+
+function reverseWords(str) {
+  // Go for it
+}
+
+console.log(reverseWords("a b c d"));
