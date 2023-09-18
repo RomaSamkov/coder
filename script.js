@@ -19,5 +19,16 @@ function reverseWords(str) {
   return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
 
-console.log(reverseWords("a b c d"));
-console.log(reverseWords("javascript"));
+// console.log(reverseWords("a b c d"));
+// console.log(reverseWords("javascript"));
+
+function areYouPlayingBanjo(name) {
+  if (name.charAt(0).toLowerCase() == "r") {
+    return name + " plays banjo";
+  }
+
+  return name + " does not play banjo";
+}
+
+console.log(areYouPlayingBanjo("Adam"));
+console.log(areYouPlayingBanjo("Ringo"));
