@@ -5,7 +5,7 @@ function setAlarm(employed, vacation) {
   return employed;
 }
 
-console.log(setAlarm(true, true));
+// console.log(setAlarm(true, true));
 
 class Kata {
   static getVolumeOfCuboid(length, width, height) {
@@ -13,10 +13,11 @@ class Kata {
   }
 }
 
-console.log(Kata.getVolumeOfCuboid(6, 2, 5));
+// console.log(Kata.getVolumeOfCuboid(6, 2, 5));
 
 function reverseWords(str) {
-  // Go for it
+  return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
 
 console.log(reverseWords("a b c d"));
+console.log(reverseWords("javascript"));
