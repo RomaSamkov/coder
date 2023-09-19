@@ -30,5 +30,12 @@ function areYouPlayingBanjo(name) {
   return name + " does not play banjo";
 }
 
-console.log(areYouPlayingBanjo("Adam"));
-console.log(areYouPlayingBanjo("Ringo"));
+// console.log(areYouPlayingBanjo("Adam"));
+// console.log(areYouPlayingBanjo("Ringo"));
+
+function testEven(n) {
+  return n % 2 === 0 ? false : true;
+}
+
+console.log(testEven(0));
+console.log(testEven(1));
