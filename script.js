@@ -54,6 +54,14 @@ function oddOrEven(array) {
   // return ar % 2 === 0 ? "even" : "odd";
 }
 
-console.log(oddOrEven([0]));
-console.log(oddOrEven([0, 1, 5]));
-console.log(oddOrEven([0, 1, 2]));
+// console.log(oddOrEven([0]));
+// console.log(oddOrEven([0, 1, 5]));
+// console.log(oddOrEven([0, 1, 2]));
+
+function printerError(s) {
+  const regex = /[a-m]/g;
+  const proper_num_of_matches = ((s || "").match(regex) || []).length;
+  return `${s.length - proper_num_of_matches}/${s.length}`;
+}
+
+console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
