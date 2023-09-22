@@ -64,4 +64,11 @@ function printerError(s) {
   return `${s.length - proper_num_of_matches}/${s.length}`;
 }
 
-console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
+// console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
+
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
+
+console.log(repeatStr(3, "*"));
+console.log(repeatStr(5, "#"));
