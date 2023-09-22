@@ -70,5 +70,19 @@ function repeatStr(n, s) {
   return s.repeat(n);
 }
 
-console.log(repeatStr(3, "*"));
-console.log(repeatStr(5, "#"));
+// console.log(repeatStr(3, "*"));
+// console.log(repeatStr(5, "#"));
+
+function lovefunc(flower1, flower2) {
+  let sum = 0;
+  sum = flower1 + flower2;
+
+  if (sum % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+console.log(lovefunc(1, 4)); //true
+console.log(lovefunc(2, 2)); //false
