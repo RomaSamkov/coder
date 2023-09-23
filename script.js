@@ -84,5 +84,15 @@ function lovefunc(flower1, flower2) {
   }
 }
 
-console.log(lovefunc(1, 4)); //true
-console.log(lovefunc(2, 2)); //false
+// console.log(lovefunc(1, 4)); //true
+// console.log(lovefunc(2, 2)); //false
+
+const reverseSeq = (n) => {
+  const array = [];
+  for (let i = 1; i <= n; i += 1) {
+    array.push(i);
+  }
+  return array.reverse();
+};
+
+console.log(reverseSeq(5));
