@@ -95,4 +95,11 @@ const reverseSeq = (n) => {
   return array.reverse();
 };
 
-console.log(reverseSeq(5));
+// console.log(reverseSeq(5));
+
+function checkForFactor(base, factor) {
+  return base % factor === 0 ? true : false;
+}
+
+console.log(checkForFactor(10, 2)); //true
+console.log(checkForFactor(11, 2)); //false
