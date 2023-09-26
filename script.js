@@ -97,9 +97,15 @@ const reverseSeq = (n) => {
 
 // console.log(reverseSeq(5));
 
-function checkForFactor(base, factor) {
-  return base % factor === 0 ? true : false;
+// function checkForFactor(base, factor) {
+//   return base % factor === 0 ? true : false;
+// }
+
+// console.log(checkForFactor(10, 2)); //true
+// console.log(checkForFactor(11, 2)); //false
+
+function maps(x) {
+  return x.map((item) => item * 2);
 }
 
-console.log(checkForFactor(10, 2)); //true
-console.log(checkForFactor(11, 2)); //false
+console.log(maps([1, 2, 3]));
