@@ -104,8 +104,22 @@ const reverseSeq = (n) => {
 // console.log(checkForFactor(10, 2)); //true
 // console.log(checkForFactor(11, 2)); //false
 
-function maps(x) {
-  return x.map((item) => item * 2);
-}
+// function maps(x) {
+//   return x.map((item) => item * 2);
+// }
 
-console.log(maps([1, 2, 3]));
+// console.log(maps([1, 2, 3]));
+
+const quarterOf = (month) => {
+  if (month > 0 && month <= 3) {
+    return 1;
+  } else if (month > 3 && month <= 6) {
+    return 2;
+  } else if (month > 6 && month <= 9) {
+    return 3;
+  } else {
+    return 4;
+  }
+};
+
+console.log(quarterOf(12)); //1
