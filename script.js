@@ -128,4 +128,10 @@ function sayHello(name) {
   return `Hello, ${name}`;
 }
 
-console.log(sayHello("Mr. Spock"));
+// console.log(sayHello("Mr. Spock"));
+
+function move(position, roll) {
+  return roll * 2 + position;
+}
+
+console.log(move(0, 4)); //8
