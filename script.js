@@ -104,9 +104,9 @@ const reverseSeq = (n) => {
 // console.log(checkForFactor(10, 2)); //true
 // console.log(checkForFactor(11, 2)); //false
 
-// function maps(x) {
-//   return x.map((item) => item * 2);
-// }
+function maps(x) {
+  return x.map((item) => item * 2);
+}
 
 // console.log(maps([1, 2, 3]));
 
@@ -122,4 +122,10 @@ const quarterOf = (month) => {
   }
 };
 
-console.log(quarterOf(12)); //1
+// console.log(quarterOf(12)); //1
+
+function sayHello(name) {
+  return `Hello, ${name}`;
+}
+
+console.log(sayHello("Mr. Spock"));
