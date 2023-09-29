@@ -134,4 +134,15 @@ function move(position, roll) {
   return roll * 2 + position;
 }
 
-console.log(move(0, 4)); //8
+// console.log(move(0, 4)); //8
+
+function findShort(s) {
+  let arr = [];
+  s.split(" ").map((item) => {
+    arr.push(item.length);
+  });
+
+  return Math.min(...arr);
+}
+
+console.log(findShort("bitcoin take over the world maybe who knows perhaps")); // 3
