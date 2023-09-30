@@ -145,4 +145,10 @@ function findShort(s) {
   return Math.min(...arr);
 }
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps")); // 3
+// console.log(findShort("bitcoin take over the world maybe who knows perhaps")); // 3
+
+const binaryArrayToNumber = (arr) => {
+  return parseInt(arr.join(""), 2);
+};
+
+console.log(binaryArrayToNumber([1, 1, 0, 1]));
