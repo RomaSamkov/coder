@@ -151,4 +151,10 @@ const binaryArrayToNumber = (arr) => {
   return parseInt(arr.join(""), 2);
 };
 
-console.log(binaryArrayToNumber([1, 1, 0, 1]));
+// console.log(binaryArrayToNumber([1, 1, 0, 1]));
+
+function getAge(inputString) {
+  return Number(inputString.charAt(0));
+}
+
+console.log(getAge("4 years old"));
