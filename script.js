@@ -202,4 +202,14 @@ function square(num) {
   return num * num;
 }
 
-console.log(square(3));
+// console.log(square(3));
+
+function minMax(arr) {
+  const min = Math.min(...arr);
+  const max = Math.max(...arr);
+  let result = [];
+  result.push(min, max);
+  return result;
+}
+
+console.log(minMax([1, 2, 3, 4, 5]));
