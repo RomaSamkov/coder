@@ -212,4 +212,10 @@ function minMax(arr) {
   return result;
 }
 
-console.log(minMax([1, 2, 3, 4, 5]));
+// console.log(minMax([1, 2, 3, 4, 5]));
+
+function upperCase(string) {
+  return string.toString() === string.toUpperCase();
+}
+
+console.log(upperCase("Hello World!"));
