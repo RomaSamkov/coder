@@ -257,7 +257,7 @@ function removeEveryOther(arr) {
   return newArr;
 }
 
-console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]), [
+console.log(removeEveryOther(["Hello", "Hello Again"]), [
   "Hello",
   "Hello Again",
 ]);
