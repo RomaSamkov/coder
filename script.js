@@ -225,14 +225,26 @@ function findNeedle(haystack) {
   return `found the needle at position ${index}`;
 }
 
-console.log(
-  findNeedle([
-    "283497238987234",
-    "a dog",
-    "a cat",
-    "some random junk",
-    "a piece of hay",
-    "needle",
-    "something somebody lost a while ago",
-  ])
-);
+// console.log(
+//   findNeedle([
+//     "283497238987234",
+//     "a dog",
+//     "a cat",
+//     "some random junk",
+//     "a piece of hay",
+//     "needle",
+//     "something somebody lost a while ago",
+//   ])
+// );
+
+function getRealFloor(n) {
+  if (n > 0 && n <= 13) {
+    return n - 1;
+  } else if (n > 13) {
+    return n - 2;
+  } else {
+    return n;
+  }
+}
+
+console.log(getRealFloor(4));
