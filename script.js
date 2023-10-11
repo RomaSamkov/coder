@@ -247,4 +247,17 @@ function getRealFloor(n) {
   }
 }
 
-console.log(getRealFloor(4));
+// console.log(getRealFloor(4));
+
+function removeEveryOther(arr) {
+  const newArr = [];
+  for (let i = 0; i < arr.length; i = i + 2) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+}
+
+console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]), [
+  "Hello",
+  "Hello Again",
+]);
