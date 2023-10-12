@@ -257,7 +257,17 @@ function removeEveryOther(arr) {
   return newArr;
 }
 
-console.log(removeEveryOther(["Hello", "Hello Again"]), [
-  "Hello",
-  "Hello Again",
-]);
+// console.log(removeEveryOther(["Hello", "Hello Again"]), [
+//   "Hello",
+//   "Hello Again",
+// ]);
+
+function hoopCount(n) {
+  if (n < 10) {
+    return "Keep at it until you get it";
+  } else {
+    return "Great, now move on to tricks";
+  }
+}
+
+console.log(hoopCount(10));
