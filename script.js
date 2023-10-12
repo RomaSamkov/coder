@@ -270,4 +270,20 @@ function hoopCount(n) {
   }
 }
 
-console.log(hoopCount(10));
+// console.log(hoopCount(10));
+
+function calculateYears(principal, interest, tax, desired) {
+  for (var year = 0; ; year++) {
+    if (principal >= desired) {
+      return year;
+    }
+
+    var currentYearInterest = interest * principal;
+
+    var currentYearTax = currentYearInterest * tax;
+
+    principal = principal + currentYearInterest - currentYearTax;
+  }
+}
+
+console.log(calculateYears(1000, 0.05, 0.18, 1100)); //3
