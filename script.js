@@ -299,4 +299,22 @@ function find_average(array) {
   return sum / array.length;
 }
 
-console.log(find_average([1, 2, 3]));
+// console.log(find_average([1, 2, 3]));
+
+function shortcut(string) {
+  let array = [];
+  string.split("").map((item) => {
+    if (
+      item !== "a" &&
+      item !== "e" &&
+      item !== "i" &&
+      item !== "o" &&
+      item !== "u"
+    ) {
+      array.push(item);
+    }
+  });
+  return array.join("");
+}
+
+console.log(shortcut("how are you today coder?"));
