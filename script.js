@@ -286,4 +286,17 @@ function calculateYears(principal, interest, tax, desired) {
   }
 }
 
-console.log(calculateYears(1000, 0.05, 0.18, 1100)); //3
+// console.log(calculateYears(1000, 0.05, 0.18, 1100)); //3
+
+function find_average(array) {
+  let sum = 0;
+  if (array.length === 0) {
+    return 0;
+  }
+  for (let num of array) {
+    sum += num;
+  }
+  return sum / array.length;
+}
+
+console.log(find_average([1, 2, 3]));
