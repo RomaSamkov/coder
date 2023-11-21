@@ -317,4 +317,4 @@ function shortcut(string) {
   return array.join("");
 }
 
-console.log(shortcut("how are you today coder?"));
+// console.log(shortcut("how are you today coder?"));
