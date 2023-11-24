@@ -18,4 +18,12 @@ function findMultiples(integer, limit) {
   return result;
 }
 
-console.log(findMultiples(5, 25));
+// console.log(findMultiples(5, 25));
+
+function nameShuffler(str) {
+  let r = [];
+  r.reverse;
+  return str.split(" ").reverse().join(" ");
+}
+
+console.log(nameShuffler("john McClane"));
