@@ -32,4 +32,14 @@ function findUniq(arr) {
   return arr.find((item) => arr.indexOf(item) === arr.lastIndexOf(item));
 }
 
-console.log(findUniq([1, 1, 1, 2, 1, 1]));
+// console.log(findUniq([1, 1, 1, 2, 1, 1]));
+
+function solution(nums) {
+  if (nums == null) {
+    return [];
+  }
+
+  return nums.sort((a, b) => a - b);
+}
+
+console.log(solution([1, 2, 3, 10, 5]));
