@@ -42,4 +42,10 @@ function solution(nums) {
   return nums.sort((a, b) => a - b);
 }
 
-console.log(solution([1, 2, 3, 10, 5]));
+// console.log(solution([1, 2, 3, 10, 5]));
+
+function getChar(c) {
+  return String.fromCharCode(c);
+}
+
+console.log(getChar(31));
