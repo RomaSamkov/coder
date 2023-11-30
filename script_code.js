@@ -75,5 +75,11 @@ function max(list) {
   return Math.max(...list);
 }
 
-console.log(min([-52, 56, 30, 29, -54, 0, -110])); /*  -110  */
-console.log(max([4, 6, 2, 1, 9, 63, -134, 566])); /* 566 */
+// console.log(min([-52, 56, 30, 29, -54, 0, -110])); /*  -110  */
+// console.log(max([4, 6, 2, 1, 9, 63, -134, 566])); /* 566 */
+
+function digitize(n) {
+  return [...String(n)].map(Number).reverse();
+}
+
+console.log(digitize(35231));
