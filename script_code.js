@@ -82,4 +82,10 @@ function digitize(n) {
   return [...String(n)].map(Number).reverse();
 }
 
-console.log(digitize(35231));
+// console.log(digitize(35231));
+
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+
+console.log(makeUpperCase("hello"));
