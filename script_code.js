@@ -103,5 +103,5 @@ function rentalCarCost(d) {
   }
 }
 
-console.log(rentalCarCost(3)); /*100 */
-console.log(rentalCarCost(4)); /*140 */
+console.log(rentalCarCost(3));
+console.log(rentalCarCost(4));
