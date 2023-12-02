@@ -88,4 +88,20 @@ function makeUpperCase(str) {
   return str.toUpperCase();
 }
 
-console.log(makeUpperCase("hello"));
+// console.log(makeUpperCase("hello"));
+
+function rentalCarCost(d) {
+  const carPay = d * 40;
+  if (d < 3) {
+    return carPay;
+  }
+  if (d >= 3 && d < 7) {
+    return carPay - 20;
+  }
+  if (d >= 7) {
+    return carPay - 50;
+  }
+}
+
+console.log(rentalCarCost(3)); /*100 */
+console.log(rentalCarCost(4)); /*140 */
