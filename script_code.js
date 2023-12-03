@@ -103,5 +103,26 @@ function rentalCarCost(d) {
   }
 }
 
-console.log(rentalCarCost(3));
-console.log(rentalCarCost(4));
+// console.log(rentalCarCost(3));
+// console.log(rentalCarCost(4));
+
+function getGrade(s1, s2, s3) {
+  const score = (s1 + s2 + s3) / 3;
+  if (score >= 90) {
+    return "A";
+  }
+  if (score < 90 && score >= 80) {
+    return "B";
+  }
+  if (score < 80 && score >= 70) {
+    return "C";
+  }
+  if (score < 70 && score >= 60) {
+    return "D";
+  }
+  if (score < 60) {
+    return "F";
+  }
+}
+
+console.log(getGrade(44, 55, 52));
