@@ -125,4 +125,23 @@ function getGrade(s1, s2, s3) {
   }
 }
 
-console.log(getGrade(44, 55, 52));
+// console.log(getGrade(44, 55, 52));
+
+function openOrSenior(data) {
+  let result = [];
+  data.map(([age, handicap]) => {
+    if (age >= 55 && handicap > 7) {
+      result.push("Senior");
+    } else result.push("Open");
+  });
+  return result;
+}
+
+console.log(
+  openOrSenior([
+    [45, 12],
+    [55, 21],
+    [19, -2],
+    [104, 20],
+  ])
+);
