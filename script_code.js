@@ -137,11 +137,17 @@ function openOrSenior(data) {
   return result;
 }
 
-console.log(
-  openOrSenior([
-    [45, 12],
-    [55, 21],
-    [19, -2],
-    [104, 20],
-  ])
-);
+// console.log(
+//   openOrSenior([
+//     [45, 12],
+//     [55, 21],
+//     [19, -2],
+//     [104, 20],
+//   ])
+// );
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump <= mpg * fuelLeft ? true : false;
+};
+
+console.log(zeroFuel(50, 25, 2));
