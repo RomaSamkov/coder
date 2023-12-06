@@ -150,4 +150,12 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump <= mpg * fuelLeft ? true : false;
 };
 
-console.log(zeroFuel(50, 25, 2));
+// console.log(zeroFuel(50, 25, 2));
+
+function gimme(triplet) {
+  const sortedArray = triplet.slice(0);
+  sortedArray.sort((a, b) => a - b);
+  return triplet.indexOf(sortedArray[1]);
+}
+
+console.log(gimme([5, 10, 14]));
