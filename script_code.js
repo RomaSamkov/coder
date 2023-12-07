@@ -158,4 +158,16 @@ function gimme(triplet) {
   return triplet.indexOf(sortedArray[1]);
 }
 
-console.log(gimme([5, 10, 14]));
+// console.log(gimme([5, 10, 14]));
+
+function smallEnough(a, limit) {
+  let arSmallEnough = [];
+  a.map((el) => {
+    if (el > limit) {
+      arSmallEnough.push(el);
+    }
+  });
+  return arSmallEnough.length > 0 ? false : true;
+}
+
+console.log(smallEnough([101, 45, 75, 105, 99, 107], 107));
