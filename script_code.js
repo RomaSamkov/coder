@@ -170,4 +170,15 @@ function smallEnough(a, limit) {
   return arSmallEnough.length > 0 ? false : true;
 }
 
-console.log(smallEnough([101, 45, 75, 105, 99, 107], 107));
+// console.log(smallEnough([101, 45, 75, 105, 99, 107], 107));
+
+const countSheep = function (num) {
+  let strSheep = "";
+  for (let i = 1; i <= num; i++) {
+    strSheep += i.toString() + " sheep...";
+  }
+
+  return strSheep;
+};
+
+console.log(countSheep(2));
