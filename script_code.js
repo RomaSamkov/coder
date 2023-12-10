@@ -187,4 +187,22 @@ function friend(friends) {
   return friends.filter((el) => el.length == 4);
 }
 
-console.log(friend(["Ryan", "Jimmy", "1234", "Cool Man"]));
+// console.log(friend(["Ryan", "Jimmy", "1234", "Cool Man"]));
+
+function gooseFilter(birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+  return birds.filter((bird) => !geese.includes(bird));
+}
+
+console.log(
+  gooseFilter([
+    "Mallard",
+    "Hook Bill",
+    "African",
+    "Crested",
+    "Pilgrim",
+    "Toulouse",
+    "Blue Swedish",
+  ])
+);
