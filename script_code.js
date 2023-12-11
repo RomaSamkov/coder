@@ -195,14 +195,23 @@ function gooseFilter(birds) {
   return birds.filter((bird) => !geese.includes(bird));
 }
 
-console.log(
-  gooseFilter([
-    "Mallard",
-    "Hook Bill",
-    "African",
-    "Crested",
-    "Pilgrim",
-    "Toulouse",
-    "Blue Swedish",
-  ])
-);
+// console.log(
+//   gooseFilter([
+//     "Mallard",
+//     "Hook Bill",
+//     "African",
+//     "Crested",
+//     "Pilgrim",
+//     "Toulouse",
+//     "Blue Swedish",
+//   ])
+// );
+
+function accum(s) {
+  return s
+    .split("")
+    .map((el, i) => el.toUpperCase() + el.toLowerCase().repeat(i))
+    .join("-");
+}
+
+console.log(accum("ZpglnRxqenU"));
