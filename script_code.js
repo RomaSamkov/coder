@@ -214,4 +214,15 @@ function accum(s) {
     .join("-");
 }
 
-console.log(accum("ZpglnRxqenU"));
+// console.log(accum("ZpglnRxqenU"));
+
+function combat(health, damage) {
+  const hp = health - damage;
+  if (health < damage) {
+    return 0;
+  } else {
+    return hp;
+  }
+}
+
+console.log(combat(92, 8));
