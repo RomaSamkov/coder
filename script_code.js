@@ -225,4 +225,13 @@ function combat(health, damage) {
   }
 }
 
-console.log(combat(92, 8));
+// console.log(combat(92, 8));
+
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+console.log(reverseWords("double  spaced  words"));
