@@ -234,4 +234,17 @@ function reverseWords(str) {
     .join(" ");
 }
 
-console.log(reverseWords("double  spaced  words"));
+// console.log(reverseWords("double  spaced  words"));
+
+function position(letter) {
+  const DIFFERENCE_CHARCODE_AND_LETTERS = 96;
+
+  const myCharLowercase = letter.toLowerCase();
+
+  const position =
+    myCharLowercase.charCodeAt() - DIFFERENCE_CHARCODE_AND_LETTERS;
+
+  return `Position of alphabet: ${position}`;
+}
+
+console.log(position("e"));
