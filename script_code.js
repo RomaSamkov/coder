@@ -247,4 +247,10 @@ function position(letter) {
   return `Position of alphabet: ${position}`;
 }
 
-console.log(position("e"));
+// console.log(position("e"));
+
+function roundToNext5(n) {
+  return Math.ceil(n / 5) * 5;
+}
+
+console.log(roundToNext5(28));
