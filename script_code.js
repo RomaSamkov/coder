@@ -253,4 +253,19 @@ function roundToNext5(n) {
   return Math.ceil(n / 5) * 5;
 }
 
-console.log(roundToNext5(28));
+// console.log(roundToNext5(28));
+
+function duplicateEncode(word) {
+  let result = "";
+  word = word.toLowerCase();
+  for (let i = 0; i < word.length; i++) {
+    if (word.indexOf(word[i]) === word.lastIndexOf(word[i])) {
+      result += "(";
+    } else {
+      result += ")";
+    }
+  }
+  return result;
+}
+
+console.log(duplicateEncode("Success"));
