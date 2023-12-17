@@ -268,4 +268,14 @@ function duplicateEncode(word) {
   return result;
 }
 
-console.log(duplicateEncode("Success"));
+// console.log(duplicateEncode("Success"));
+
+function feast(beast, dish) {
+  return (
+    beast.charCodeAt(0) === dish.charCodeAt(0) &&
+    beast.charCodeAt(beast.length - 1) === dish.charCodeAt(dish.length - 1)
+  );
+}
+
+console.log(feast("great blue heron", "garlic naan"));
+console.log(feast("brown bear", "bear claw"));
