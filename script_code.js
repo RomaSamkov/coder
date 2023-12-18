@@ -277,5 +277,11 @@ function feast(beast, dish) {
   );
 }
 
-console.log(feast("great blue heron", "garlic naan"));
-console.log(feast("brown bear", "bear claw"));
+// console.log(feast("great blue heron", "garlic naan"));
+// console.log(feast("brown bear", "bear claw"));
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+console.log(twiceAsOld(36, 7));
