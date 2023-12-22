@@ -342,5 +342,12 @@ function solve(s) {
   return upperCase > lowerCase ? s.toUpperCase() : s.toLowerCase();
 }
 
-console.log(solve("CODe"));
-console.log(solve("Code"));
+// console.log(solve("CODe"));
+// console.log(solve("Code"));
+
+function hexToDec(hexString) {
+  return parseInt(hexString, 16);
+}
+
+console.log(hexToDec("a")); /* 10 */
+console.log(hexToDec("FF")); /* 255 */
