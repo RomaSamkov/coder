@@ -349,5 +349,22 @@ function hexToDec(hexString) {
   return parseInt(hexString, 16);
 }
 
-console.log(hexToDec("a")); /* 10 */
-console.log(hexToDec("FF")); /* 255 */
+// console.log(hexToDec("a"));
+// console.log(hexToDec("FF"));
+
+function persistence(num) {
+  let digits = num.toString();
+  let counter = 0;
+
+  while (digits.length > 1) {
+    digits = digits
+      .split("")
+      .map(Number)
+      .reduce((a, b) => a * b)
+      .toString();
+    counter++;
+  }
+  return counter;
+}
+
+console.log(persistence(39));
