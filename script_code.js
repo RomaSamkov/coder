@@ -392,4 +392,4 @@ function greet(language) {
   return database[language] || database["english"];
 }
 
-console.log(greet("spanish"));
+// console.log(greet("spanish"));
