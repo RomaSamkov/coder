@@ -393,3 +393,9 @@ function greet(language) {
 }
 
 // console.log(greet("spanish"));
+
+function solutionString(str, ending) {
+  return str.endsWith(ending);
+}
+
+console.log(solutionString("abcde", "cde"));
