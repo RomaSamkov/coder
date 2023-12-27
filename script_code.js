@@ -398,4 +398,19 @@ function solutionString(str, ending) {
   return str.endsWith(ending);
 }
 
-console.log(solutionString("abcde", "cde"));
+// console.log(solutionString("abcde", "cde"));
+
+function factorial(n) {
+  if (n > 12 || n < 0) {
+    throw new RangeError();
+  }
+  let arOfNum = [];
+  for (let i = 0; i <= n; i++) {
+    if (i > 0) {
+      arOfNum.push(i);
+    }
+  }
+  return arOfNum.reduce((a, b) => a * b, 1);
+}
+
+console.log(factorial(3));
