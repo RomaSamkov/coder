@@ -425,4 +425,16 @@ function saleHotdogs(n) {
   }
 }
 
-console.log(saleHotdogs(1));
+// console.log(saleHotdogs(1));
+
+function alphabetPosition(text) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  return text
+    .toLowerCase()
+    .split("")
+    .filter((letter) => alphabet.includes(letter))
+    .map((l) => alphabet.indexOf(l) + 1)
+    .join(" ");
+}
+
+console.log(alphabetPosition("The sunset sets at twelve o' clock."));
