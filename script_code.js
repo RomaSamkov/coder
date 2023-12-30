@@ -443,4 +443,15 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
-console.log(stringToArray("Robin Singh"));
+// console.log(stringToArray("Robin Singh"));
+
+function duplicateCount(text) {
+  return text
+    .toLowerCase()
+    .split("")
+    .filter((val, i, arr) => {
+      return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+    }).length;
+}
+
+console.log(duplicateCount("abba"));
