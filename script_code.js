@@ -454,4 +454,15 @@ function duplicateCount(text) {
     }).length;
 }
 
-console.log(duplicateCount("abba"));
+// console.log(duplicateCount("abba"));
+
+function removeSmallest(numbers) {
+  if (numbers.length === 0) {
+    return [];
+  }
+  const min = Math.min(...numbers);
+  const index = numbers.indexOf(min);
+  return numbers.slice(0, index).concat(numbers.slice(index + 1));
+}
+
+console.log(removeSmallest([1, 2, 1, 3, 4, 5]));
