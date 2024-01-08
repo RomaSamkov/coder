@@ -465,4 +465,10 @@ function removeSmallest(numbers) {
   return numbers.slice(0, index).concat(numbers.slice(index + 1));
 }
 
-console.log(removeSmallest([1, 2, 1, 3, 4, 5]));
+// console.log(removeSmallest([1, 2, 1, 3, 4, 5]));
+
+function reverseList(list) {
+  return list.reverse();
+}
+
+console.log(reverseList([1, 2, 3, 4]));
