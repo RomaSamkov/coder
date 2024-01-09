@@ -471,4 +471,16 @@ function reverseList(list) {
   return list.reverse();
 }
 
-console.log(reverseList([1, 2, 3, 4]));
+// console.log(reverseList([1, 2, 3, 4]));
+
+function flattenAndSort(array) {
+  return array.flat().sort((a, b) => a - b);
+}
+
+console.log(
+  flattenAndSort([
+    [3, 2, 1],
+    [7, 9, 8],
+    [6, 4, 5],
+  ])
+);
