@@ -477,10 +477,25 @@ function flattenAndSort(array) {
   return array.flat().sort((a, b) => a - b);
 }
 
-console.log(
-  flattenAndSort([
-    [3, 2, 1],
-    [7, 9, 8],
-    [6, 4, 5],
-  ])
-);
+// console.log(
+//   flattenAndSort([
+//     [3, 2, 1],
+//     [7, 9, 8],
+//     [6, 4, 5],
+//   ])
+// );
+
+function replace(s) {
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let newSentence = "";
+  for (let i = 0; i < s.length; i++) {
+    if (vowels.includes(s[i])) {
+      newSentence += "!";
+    } else {
+      newSentence += s[i];
+    }
+  }
+  return newSentence;
+}
+
+console.log(replace("ABCDE"));
