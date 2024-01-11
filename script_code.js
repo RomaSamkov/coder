@@ -507,4 +507,14 @@ function problem(x) {
   return x * 50 + 6;
 }
 
-console.log(problem(8));
+// console.log(problem(8));
+
+function reverseLetter(str) {
+  return str
+    .split("")
+    .reverse()
+    .join("")
+    .replace(/[^a-zA-Z]/g, "");
+}
+
+console.log(reverseLetter("krishan"));
