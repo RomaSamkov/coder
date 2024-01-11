@@ -498,4 +498,13 @@ function replace(s) {
   return newSentence;
 }
 
-console.log(replace("ABCDE"));
+// console.log(replace("ABCDE"));
+
+function problem(x) {
+  if (typeof x === "string") {
+    return "Error";
+  }
+  return x * 50 + 6;
+}
+
+console.log(problem(8));
