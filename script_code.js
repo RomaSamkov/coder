@@ -517,4 +517,15 @@ function reverseLetter(str) {
     .replace(/[^a-zA-Z]/g, "");
 }
 
-console.log(reverseLetter("krishan"));
+// console.log(reverseLetter("krishan"));
+
+function countBy(x, n) {
+  let arraycountBy = [];
+
+  for (let i = 1; i <= n; i++) {
+    arraycountBy.push(i * x);
+  }
+  return arraycountBy;
+}
+
+console.log(countBy(1, 10));
