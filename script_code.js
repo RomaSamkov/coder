@@ -528,4 +528,10 @@ function countBy(x, n) {
   return arraycountBy;
 }
 
-console.log(countBy(1, 10));
+// console.log(countBy(1, 10));
+
+function check50(x, y) {
+  return x === 50 || y === 50 || x + y === 50;
+}
+
+console.log(check50(25, 25));
