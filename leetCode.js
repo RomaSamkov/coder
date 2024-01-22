@@ -17,4 +17,14 @@ function isValid(s) {
   return stack.length === 0;
 }
 
-console.log(isValid("()[]{}"));
+// console.log(isValid("()[]{}"));
+
+const isEmpty = (obj) => {
+  if (Array.isArray(obj)) {
+    return obj.length === 0;
+  } else {
+    return Object.keys(obj).length === 0;
+  }
+};
+
+console.log(isEmpty({}));
