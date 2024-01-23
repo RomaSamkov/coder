@@ -27,4 +27,12 @@ const isEmpty = (obj) => {
   }
 };
 
-console.log(isEmpty({}));
+// console.log(isEmpty({}));
+
+const createCounter = function (n) {
+  return function () {
+    return n++;
+  };
+};
+
+console.log(createCounter(10));
