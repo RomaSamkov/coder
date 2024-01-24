@@ -35,4 +35,10 @@ const createCounter = function (n) {
   };
 };
 
-console.log(createCounter(10));
+// console.log(createCounter(10));
+
+async function sleep(millis) {
+  return new Promise((resolve) => setTimeout(resolve, millis));
+}
+
+console.log(sleep(100));
