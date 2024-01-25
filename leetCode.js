@@ -41,4 +41,16 @@ async function sleep(millis) {
   return new Promise((resolve) => setTimeout(resolve, millis));
 }
 
-console.log(sleep(100));
+// console.log(sleep(100));
+
+const filter = function (arr, fn) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i], i)) {
+      filteredArr.push(arr[i]);
+    }
+  }
+  return filteredArr;
+};
+
+console.log(filter([0, 10, 20, 30]));
