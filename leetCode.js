@@ -53,4 +53,33 @@ const filter = function (arr, fn) {
   return filteredArr;
 };
 
-console.log(filter([0, 10, 20, 30]));
+// console.log(filter([0, 10, 20, 30]));
+
+const createCounterII = function (init) {
+  let current_value = init;
+
+  function increment() {
+    current_value += 1;
+    return current_value;
+  }
+
+  function decrement() {
+    current_value -= 1;
+    return current_value;
+  }
+
+  function reset() {
+    current_value = init;
+    return current_value;
+  }
+
+  return {
+    increment,
+    decrement,
+    reset,
+  };
+};
+const counter = createCounterII(8);
+console.log(counter.increment());
+console.log(counter.reset());
+console.log(counter.decrement());
