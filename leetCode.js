@@ -79,7 +79,16 @@ const createCounterII = function (init) {
     reset,
   };
 };
-const counter = createCounterII(8);
-console.log(counter.increment());
-console.log(counter.reset());
-console.log(counter.decrement());
+// const counter = createCounterII(8);
+// console.log(counter.increment());
+// console.log(counter.reset());
+// console.log(counter.decrement());
+
+const createHelloWorld = function () {
+  return function (...args) {
+    return "Hello World";
+  };
+};
+
+const greeting = createHelloWorld();
+console.log(greeting());
