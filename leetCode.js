@@ -84,6 +84,8 @@ const createCounterII = function (init) {
 // console.log(counter.reset());
 // console.log(counter.decrement());
 
+// JavaScript chalange 30 in LeeTcode;
+
 const createHelloWorld = function () {
   return function (...args) {
     return "Hello World";
