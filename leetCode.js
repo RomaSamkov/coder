@@ -114,6 +114,21 @@ function expect(val) {
   };
 }
 
-const result = expect(5);
-console.log(result.toBe(5));
-console.log(result.notToBe(5));
+// const result = expect(5);
+// console.log(result.toBe(5));
+// console.log(result.notToBe(5));
+
+var map = function (arr, fn) {
+  let transformedArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    transformedArray[i] = fn(arr[i], i);
+  }
+  return transformedArray;
+};
+
+let arr = [1, 2, 3, 4, 5];
+let fn = function (element, index) {
+  return element * index;
+};
+let transformedArray = map(arr, fn);
+console.log(transformedArray);
