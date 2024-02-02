@@ -130,5 +130,19 @@ let arr = [1, 2, 3, 4, 5];
 let fn = function (element, index) {
   return element * index;
 };
-let transformedArray = map(arr, fn);
-console.log(transformedArray);
+// let transformedArray = map(arr, fn);
+// console.log(transformedArray);
+
+function customReduce(nums, fn, init) {
+  // Initialize the accumulator with the initial value
+  let val = init;
+
+  // Iterate through each element in the array
+  for (let i = 0; i < nums.length; i++) {
+    // Apply the reducer function to the current element and the accumulated value
+    val = fn(val, nums[i]);
+  }
+
+  // Return the final result
+  return val;
+}
