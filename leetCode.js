@@ -146,3 +146,16 @@ function customReduce(nums, fn, init) {
   // Return the final result
   return val;
 }
+
+function compose(functions) {
+  // If the array is empty, return the identity function
+  if (functions.length === 0) {
+    return (x) => x;
+  }
+
+  // Otherwise, create the composed function
+  return function (x) {
+    // Apply each function in reverse order
+    return functions.reduceRight((result, fn) => fn(result), x);
+  };
+}
