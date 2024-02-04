@@ -159,3 +159,9 @@ function compose(functions) {
     return functions.reduceRight((result, fn) => fn(result), x);
   };
 }
+
+var argumentsLength = function (...args) {
+  return arguments.length;
+};
+
+console.log(argumentsLength(1, 2, 3));
