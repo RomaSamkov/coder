@@ -164,4 +164,19 @@ var argumentsLength = function (...args) {
   return arguments.length;
 };
 
-console.log(argumentsLength(1, 2, 3));
+// console.log(argumentsLength(1, 2, 3));
+
+var once = function (fn) {
+  let hasBeenCalled = false;
+  let result;
+
+  return function () {
+    if (!hasBeenCalled) {
+      hasBeenCalled = true;
+      result = fn.apply(this, arguments);
+      return result;
+    } else {
+      return undefined;
+    }
+  };
+};
