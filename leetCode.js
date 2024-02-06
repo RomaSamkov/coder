@@ -180,3 +180,21 @@ var once = function (fn) {
     }
   };
 };
+
+function memoize(fn) {
+  const cache = {}; // Initialize an empty cache
+
+  return function (...args) {
+    const key = JSON.stringify(args); // Create a unique key based on input arguments
+
+    if (key in cache) {
+      console.log("Fetching from cache"); // Log cache hit
+      return cache[key]; // Return cached result
+    } else {
+      console.log("Calculating result"); // Log cache miss
+      const result = fn(...args); // Compute the result using the original function
+      cache[key] = result; // Store the result in the cache
+      return result;
+    }
+  };
+}
