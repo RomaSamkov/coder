@@ -198,3 +198,33 @@ function memoize(fn) {
     }
   };
 }
+
+function addTwoPromises(promise1, promise2) {
+  // Create a new promise using the Promise constructor
+  return new Promise((resolve, reject) => {
+    // Use Promise.all to wait for both promises to resolve
+    Promise.all([promise1, promise2])
+      .then(([result1, result2]) => {
+        // Calculate the sum of the resolved numbers
+        const sum = result1 + result2;
+        // Resolve the new promise with the sum
+        resolve(sum);
+      })
+      .catch((error) => {
+        // If any of the promises reject, reject the new promise
+        reject(error);
+      });
+  });
+}
+
+// Example usage:
+const promise1 = Promise.resolve(20);
+const promise2 = Promise.resolve(60);
+
+addTwoPromises(promise1, promise2)
+  .then((result) => {
+    console.log(`Sum of promise1 and promise2: ${result}`);
+  })
+  .catch((error) => {
+    console.error(`Error: ${error.message}`);
+  });
