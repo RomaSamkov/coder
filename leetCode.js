@@ -228,3 +228,41 @@ addTwoPromises(promise1, promise2)
   .catch((error) => {
     console.error(`Error: ${error.message}`);
   });
+
+function delayedExecution(fn, args, t) {
+  // Set up the timeout
+  const timeoutId = setTimeout(() => {
+    fn(...args); // Execute fn with provided args
+  }, t);
+
+  // Create the cancel function
+  function cancelFn() {
+    clearTimeout(timeoutId); // Cancel the scheduled execution
+  }
+
+  // Return the cancel function
+  return cancelFn;
+}
+
+// Example usage:
+const myFunction = (message) => {
+  console.log(`Delayed execution: ${message}`);
+};
+
+const argsArray = ["Hello, World!"];
+const delayTimeMs = 2000; // 2 seconds
+
+const cancelFunction = delayedExecution(myFunction, argsArray, delayTimeMs);
+
+// Uncomment the line below to cancel the execution before the delay:
+// cancelFunction();
+
+var cancellable = function (fn, args, t) {
+  const timeoutId1 = setTimeout(() => {
+    fn(...args);
+  }, t);
+  function cancelFn() {
+    clearTimeout(timeoutId1);
+  }
+  return cancelFn;
+};
