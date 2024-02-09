@@ -266,3 +266,11 @@ var cancellable = function (fn, args, t) {
   }
   return cancelFn;
 };
+
+var cancellable = function (fn, args, t) {
+  fn(...args);
+  let timer = setInterval(() => fn(...args), t);
+
+  let cancelFn = () => clearInterval(timer);
+  return cancelFn;
+};
