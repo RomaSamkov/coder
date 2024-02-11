@@ -294,3 +294,12 @@ var timeLimit = function (fn, t) {
     });
   };
 };
+
+class Movie {
+  constructor(title, director) {
+    this.title = title;
+    this.director = director;
+  }
+}
+const film = new Movie("Film", "Columbia Film");
+console.log(film);
