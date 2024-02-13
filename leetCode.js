@@ -356,3 +356,13 @@ TimeLimitedCache.prototype.count = function () {
   }
   return count;
 };
+
+var debounce = function (fn, t) {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      fn.apply(this, args);
+    }, t);
+  };
+};
