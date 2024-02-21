@@ -455,3 +455,21 @@ const join = function (arr1, arr2) {
   }
   return Object.values(ob);
 };
+
+/**
+ * @param {Array} arr
+ * @param {number} depth
+ * @return {Array}
+ */
+var flat = function (arr, n) {
+  if (n === 0) return arr;
+  const flatArray = [];
+  for (const elem of arr) {
+    if (Array.isArray(elem)) {
+      flatArray.push(...flat(elem, n - 1));
+    } else {
+      flatArray.push(elem);
+    }
+  }
+  return flatArray;
+};
