@@ -531,3 +531,22 @@ class EventEmitter {
     });
   }
 }
+
+/**
+ * @param {number[]} nums
+ * @return {void}
+ */
+class ArrayWrapper {
+  constructor(nums) {
+    this.array = nums;
+  }
+
+  valueOf() {
+    return this.array.reduce((sum, el) => sum + el, 0);
+  }
+
+  toString() {
+    if (this.array.length === 0) return "[]";
+    return `[${this.array.join(",")}]`;
+  }
+}
