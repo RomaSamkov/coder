@@ -318,3 +318,9 @@ function shortcut(string) {
 }
 
 // console.log(shortcut("how are you today coder?"));
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}
+
+console.log(take([0, 1, 2, 3, 5, 8, 13], 2));

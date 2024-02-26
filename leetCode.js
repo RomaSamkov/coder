@@ -223,7 +223,7 @@ const promise2 = Promise.resolve(60);
 
 addTwoPromises(promise1, promise2)
   .then((result) => {
-    console.log(`Sum of promise1 and promise2: ${result}`);
+    // console.log(`Sum of promise1 and promise2: ${result}`);
   })
   .catch((error) => {
     console.error(`Error: ${error.message}`);
@@ -246,7 +246,7 @@ function delayedExecution(fn, args, t) {
 
 // Example usage:
 const myFunction = (message) => {
-  console.log(`Delayed execution: ${message}`);
+  // console.log(`Delayed execution: ${message}`);
 };
 
 const argsArray = ["Hello, World!"];
@@ -302,7 +302,7 @@ class Movie {
   }
 }
 const film = new Movie("Film", "Columbia Film");
-console.log(film);
+// console.log(film);
 
 var TimeLimitedCache = function () {
   this.cache = new Map();
