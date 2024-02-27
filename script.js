@@ -323,4 +323,22 @@ function take(arr, n) {
   return arr.slice(0, n);
 }
 
-console.log(take([0, 1, 2, 3, 5, 8, 13], 2));
+// console.log(take([0, 1, 2, 3, 5, 8, 13], 2));
+
+function calculateAge(birthDate, otherDate) {
+  const age = otherDate - birthDate;
+
+  if (age === 1) {
+    return "You are " + age + " year old.";
+  } else if (age > 1) {
+    return "You are " + age + " years old.";
+  } else if (age < -1) {
+    return "You will be born in " + Math.abs(age) + " years.";
+  } else if (age === -1) {
+    return "You will be born in " + Math.abs(age) + " year.";
+  } else {
+    return "You were born this very year!";
+  }
+}
+
+console.log(calculateAge(2012, 2018));
