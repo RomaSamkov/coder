@@ -341,4 +341,21 @@ function calculateAge(birthDate, otherDate) {
   }
 }
 
-console.log(calculateAge(2012, 2018));
+// console.log(calculateAge(2012, 2018));
+
+function howMuchILoveYou(nbPetals) {
+  let arr = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+  for (let i = 0; i <= nbPetals; i++) {
+    arr.push(arr[i]);
+  }
+  return arr[nbPetals - 1];
+}
+
+console.log(howMuchILoveYou(3));
