@@ -358,4 +358,9 @@ function howMuchILoveYou(nbPetals) {
   return arr[nbPetals - 1];
 }
 
-console.log(howMuchILoveYou(3));
+// console.log(howMuchILoveYou(3));
+
+const findAverage = function (nums) {
+  return nums.reduce((total, cur) => total + cur, 0) / nums.length;
+};
+console.log(findAverage([1, 3, 5, 7]));
