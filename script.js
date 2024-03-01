@@ -363,4 +363,12 @@ function howMuchILoveYou(nbPetals) {
 const findAverage = function (nums) {
   return nums.reduce((total, cur) => total + cur, 0) / nums.length;
 };
-console.log(findAverage([1, 3, 5, 7]));
+// console.log(findAverage([1, 3, 5, 7]));
+
+function dutyFree(normPrice, discount, hol) {
+  const after_discount = (normPrice * discount) / 100;
+  const total_bottles = hol / after_discount;
+  return parseInt(total_bottles);
+}
+
+console.log(dutyFree(17, 10, 500));
