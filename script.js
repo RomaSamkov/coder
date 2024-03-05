@@ -371,4 +371,11 @@ function dutyFree(normPrice, discount, hol) {
   return parseInt(total_bottles);
 }
 
-console.log(dutyFree(17, 10, 500));
+// console.log(dutyFree(17, 10, 500));
+
+function enough(cap, on, wait) {
+  return Math.max(on + wait - cap, 0);
+}
+
+console.log(enough(10, 5, 5));
+console.log(enough(100, 60, 50));
