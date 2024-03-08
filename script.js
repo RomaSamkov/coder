@@ -377,5 +377,16 @@ function enough(cap, on, wait) {
   return Math.max(on + wait - cap, 0);
 }
 
-console.log(enough(10, 5, 5));
-console.log(enough(100, 60, 50));
+// console.log(enough(10, 5, 5));
+// console.log(enough(100, 60, 50));
+
+function incrementString(strng) {
+  if (isNaN(parseInt(strng[strng.length - 1]))) return strng + "1";
+  return strng.replace(/(0*)([0-9]+$)/, function (match, p1, p2) {
+    var up = parseInt(p2) + 1;
+    return up.toString().length > p2.length ? p1.slice(0, -1) + up : p1 + up;
+  });
+}
+
+console.log(incrementString("foo"));
+console.log(incrementString("foobar23"));
